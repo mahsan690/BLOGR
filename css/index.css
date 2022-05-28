@@ -1,0 +1,517 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@300;400;500;600&display=swap');
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Overpass', sans-serif;
+}
+header
+{
+    width: 100%;
+    height: 60px;
+    /* margin-top: 60px;
+    margin-left: 140px; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 30px;
+    background-color:  hsl(353, 100%, 62%);
+    /* background-color: transparent; */
+}
+header .navs
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+header .navs h2
+{
+    font-size: 2em;
+    text-transform: capitalize;
+    color: hsl(0, 0%, 100%);
+}
+header .navs ul
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 30px;
+    height: 100%;
+}
+header .navs ul li
+{
+    margin: 0px 20px;
+    height: 100%;
+    /* background-color: burlywood; */
+}
+header .navs ul li a
+{
+    color:  hsl(0, 0%, 100%);
+    font-size: 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+    transition-duration: 0.4s;
+    text-transform: capitalize;
+    /* margin-right: 5px; */
+    /* height: 100%; */
+}
+header .navs ul li a span img
+{
+    margin-left: 5px;
+}
+header .navs ul .lidd:hover a span img
+{
+    transform: rotate(180deg);
+}
+header .navs ul .lidd
+{
+    position: relative;
+    height: 100%;
+    transition-duration: 0.4s;
+}
+
+header .navs ul .lidd .dropdown
+{
+    position: absolute;
+    top: 57px;
+    width:150px;
+    height: 180px;
+    background-color:hsl(0, 0%, 100%) ;
+    border-radius: 10px;
+    padding: 15px 20px;
+    display: none;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 0px 0px 10px rgba(68, 68, 68, 0.291), 0px 0px 20px rgba(68, 68, 68, 0.16);
+    cursor: pointer;
+    transition-duration: 0.7s;
+    text-transform: capitalize;
+}
+header .navs ul .lidd:hover .dropdown
+{
+    display: flex;
+}
+header .navs ul .lidd .dropdown h4
+{
+    width: 100%;
+    font-size: 16px;
+    color: rgb(97, 95, 95);
+    text-align: left;
+    /* margin: 5px 0px; */
+}
+header .navs ul .lidd .dropdown h4:hover
+{
+    color: black;
+}
+header .navs ul .lidd2:hover a span img
+{
+    transform: rotate(180deg);
+}
+header .navs ul .lidd2
+{
+    position: relative;
+    height: 100%;
+    transition-duration: 0.4s;
+}
+
+header .navs ul .lidd2 .dropdown2
+{
+    position: absolute;
+    top: 57px;
+    width:150px;
+    height: 150px;
+    background-color:hsl(0, 0%, 100%) ;
+    border-radius: 10px;
+    padding: 15px 20px;
+    display: none;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 0px 0px 10px rgba(68, 68, 68, 0.291), 0px 0px 20px rgba(68, 68, 68, 0.16);
+    cursor: pointer;
+    transition-duration: 0.7s;
+    text-transform: capitalize;
+}
+header .navs ul .lidd2:hover .dropdown2
+{
+    display: flex;
+}
+header .navs ul .lidd2 .dropdown2 h4
+{
+    width: 100%;
+    font-size: 16px;
+    color: rgb(97, 95, 95);
+    text-align: left;
+    /* margin: 5px 0px; */
+}
+header .navs ul .lidd2 .dropdown2 h4:hover
+{
+    color: black;
+}
+header .navs ul .lidd3:hover a span img
+{
+    transform: rotate(180deg);
+}
+header .navs ul .lidd3
+{
+    position: relative;
+    height: 100%;
+    transition-duration: 0.4s;
+}
+
+header .navs ul .lidd3 .dropdown3
+{
+    position: absolute;
+    top: 57px;
+    width:150px;
+    height: 130px;
+    background-color:hsl(0, 0%, 100%) ;
+    border-radius: 10px;
+    padding: 15px 20px;
+    display: none;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 0px 0px 10px rgba(68, 68, 68, 0.291), 0px 0px 20px rgba(68, 68, 68, 0.16);
+    cursor: pointer;
+    transition-duration: 0.7s;
+    text-transform: capitalize;
+}
+header .navs ul .lidd3:hover .dropdown3
+{
+    display: flex;
+}
+header .navs ul .lidd3 .dropdown3 h4
+{
+    width: 100%;
+    font-size: 16px;
+    color: rgb(97, 95, 95);
+    text-align: left;
+    /* margin: 5px 0px; */
+}
+header .navs ul .lidd3 .dropdown3 h4:hover
+{
+    color: black;
+}
+header .buttons
+{
+    /* border: 1px solid black; */
+    width: 220px;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+header .buttons .login
+{
+    height: 80%;
+    width: 48%;
+    font-size: 16px;
+    outline: none;
+    border: none;
+    border-radius: 30px;
+    text-transform: capitalize;
+    background-color: transparent;
+    cursor: pointer;
+    color: hsl(0, 0%, 100%) ;
+    transition-duration: 0.4s;
+}
+header .buttons .login:hover
+{
+    background-color:hsla(0, 0%, 100%, 0.209) ;
+}
+header .buttons .register
+{
+    height: 80%;
+    width: 48%;
+    font-size: 16px;
+    outline: none;
+    border: none;
+    border-radius: 30px;
+    text-transform: capitalize;
+    color: hsl(353, 100%, 62%);
+    font-weight: 600;
+    cursor: pointer;
+    transition-duration: 0.4s;
+    background-color: hsl(0, 0%, 100%) ;
+}
+header .buttons .register:hover
+{
+    background-color:hsla(0, 0%, 100%, 0.209) ;
+    color: #fff;
+}
+.banner
+{
+    width: 100%;
+    height: 60vh;
+    background-color:hsl(353, 100%, 62%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom-left-radius: 100px;
+}
+.banner .buttons
+{
+    /* border: 1px solid black; */
+    width: 250px;
+    height: 60px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    /* border: 1px solid white; */
+}
+.banner .buttons .login
+{
+    height: 80%;
+    width: 48%;
+    font-size: 16px;
+    outline: none;
+    border: none;
+    border-radius: 30px;
+    text-transform: capitalize;
+    background-color: #fff;
+    cursor: pointer;
+    color: hsl(353, 100%, 62%);
+    transition-duration: 0.4s;
+    font-weight: 600;
+}
+.banner .buttons .login:hover
+{
+    background-color:hsla(0, 0%, 100%, 0.209) ;
+    color: #fff;
+    border: 1px solid #fff;
+}
+.banner .buttons .register
+{
+    height: 80%;
+    width: 48%;
+    font-size: 16px;
+    outline: none;
+    border: none;
+    border-radius: 30px;
+    text-transform: capitalize;
+    color: #fff;
+    font-weight: 600;
+    cursor: pointer;
+    transition-duration: 0.4s;
+    background-color: transparent;
+    border: 1px solid #fff;
+    margin-left: 15px;
+}
+.banner .buttons .register:hover
+{
+    background-color:hsla(0, 0%, 100%, 0.209) ;
+    color: #fff;
+}
+.banner .content
+{
+    /* height: fit-content; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    /* border: 1px solid #fff  ; */
+    padding: 20px;
+}
+.banner .content h2
+{
+    font-size: 3em;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+    color: #fff;
+}
+.banner .content p
+{
+    font-size: 18px;
+    margin: 20px 0px;
+    color: #fff;
+}
+.design
+{
+    margin: 70px 0px;
+    width: 100%;
+    height: 120vh;
+    /* background-color: #444; */
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.design h1
+{
+    font-size: 2em;
+    margin-top: 20px;
+    /* margin: 20px 0px; */
+    /* margin-left: 450px; */
+    text-transform: capitalize;
+    color: hsl(208, 49%, 24%);
+}
+.design .bothsides
+{
+    margin-top: 20px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* background-color: red; */
+}
+
+.design .bothsides .leftside
+{
+    width: 50%;
+    height: 100%;    
+    /* border: 1px solid black; */
+    padding:  70px 50px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;;
+}
+.design .bothsides .leftside .leftsidecontent
+{
+    padding: 20px;
+}
+.design .bothsides .leftside .leftsidecontent h2
+{
+    text-transform: capitalize;
+    margin-bottom: 8px;
+    font-size: 1.7em;
+    color: hsl(208, 49%, 24%);
+}
+.design .bothsides .leftside .leftsidecontent p
+{
+    color: #444;
+    font-size: 18px;
+}
+.design .bothsides .rightside
+{
+    width: 50%;
+    height: 100%;
+    /* border: 1px solid black; */
+    background: url(../images/illustration-editor-desktop.svg);
+    background-size: cover;
+}
+.art
+{
+    width: 100%;
+    height: 50vh;
+    background-color: hsl(237, 23%, 32%) ;
+    border-bottom-left-radius: 50px;
+    border-top-right-radius:50px ;
+}
+.art .artleftside
+{
+    width: 60%;
+    /* height: 100%; */
+    position: relative;
+}
+.art .artleftside img
+{
+    position: absolute;
+    top: -70px;
+    left: 30px;
+    bottom: 40px;
+    /* margin-bottom: 50px; */
+    /* width: 100%;
+    height: 100%; */
+}
+.art .artrightside
+{
+    width: 40%;
+    height: 100%;
+    margin-left: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+}
+.art .artrightside h1
+{
+    font-size: 2.2em;
+    text-transform: capitalize;
+    margin-bottom: 10px;
+    color: #fff;
+}
+.art .artrightside p
+{
+    font-size: 18px;
+    padding: 5px;
+    color: hsla(0, 0%, 100%, 0.47) ;
+}
+footer
+{
+    width: 100%;
+    /* height: 3    0vh; */
+    background-color: hsl(240, 10%, 16%);
+    border-top-right-radius:60px ;
+    padding: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+footer .name
+{
+    /* margin: 0px 30px; */
+    margin-right: 40px;
+    cursor: pointer;
+}
+footer .name h2
+{
+    font-size: 2em;
+    color: #fff;
+    margin-bottom: 150px;
+}
+
+footer .ul
+{
+    margin: 0px 60px;
+}
+footer .ul h3
+{
+    color: rgba(255, 255, 255, 0.59);
+    cursor: pointer;
+    position: relative;
+    transition-duration: 0.4s;
+}
+footer .ul h3:hover
+{
+    color: #fff;
+}
+footer .ul h3::before
+{
+    content: "";
+    position: absolute;
+    bottom: -2px;
+    width: 50%;
+    background-color:hsl(353, 100%, 62%) ;
+    height: 2px;
+    transition-duration: 0.4s;
+}
+footer .ul h3:hover::before
+{
+    width: 100%;
+}
+footer .ul ul
+{
+    margin-top: 20px;
+}
+footer .ul ul li
+{
+    margin: 5px 0px;
+    color: rgba(255, 255, 255, 0.243);
+    cursor: pointer;
+    transition-duration: 0.4s;
+}
+footer .ul ul li:hover
+{
+    color: #fff;
+}
